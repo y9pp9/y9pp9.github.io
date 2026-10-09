@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMD 어제 종가 리포트 - 네이버 증권</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent-blue: #38bdf8;
+      --down-color: #60a5fa;
+      --up-color: #f43f5e;
+      --border: #334155;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 24px 16px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      max-width: 560px;
+      width: 100%;
+      padding: 32px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent-blue);
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .header {
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    .price-box {
+      background: rgba(15, 23, 42, 0.6);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 24px;
+      border: 1px solid var(--border);
+    }
+    .price-title {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .main-price {
+      font-size: 40px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .change {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--down-color);
+    }
+    .date-info {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .item {
+      background: rgba(15, 23, 42, 0.4);
+      padding: 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+    .item-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .item-val {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .extra-box {
+      padding: 14px 16px;
+      background: rgba(56, 189, 248, 0.08);
+      border-radius: 8px;
+      border-left: 4px solid var(--accent-blue);
+      margin-bottom: 24px;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .footer {
+      text-align: right;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .footer a {
+      color: var(--accent-blue);
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="badge">네이버페이 증권 시세 정보</span>
+    <div class="header">
+      <h1>AMD (어드밴스드 마이크로 디바이시스)</h1>
+      <div class="subtitle">NASDAQ: AMD · 반도체 섹터</div>
+    </div>
+
+    <div class="price-box">
+      <div class="price-title">어제 종가 (미국 정규장 마감 기준)</div>
+      <div class="price-row">
+        <span class="main-price">620.68 USD</span>
+        <span class="change">-25.18 (-3.90%)</span>
+      </div>
+      <div class="date-info">기준 일시: 2026. 10. 08. 16:00 (미국 현지시간)</div>
+    </div>
+
+    <div class="grid">
+      <div class="item">
+        <div class="item-label">시가</div>
+        <div class="item-val">620.68 USD</div>
+      </div>
+      <div class="item">
+        <div class="item-label">거래량</div>
+        <div class="item-val">23,488,164 주</div>
+      </div>
+      <div class="item">
+        <div class="item-label">고가</div>
+        <div class="item-val">643.85 USD</div>
+      </div>
+      <div class="item">
+        <div class="item-label">저가</div>
+        <div class="item-val">613.34 USD</div>
+      </div>
+    </div>
+
+    <div class="extra-box">
+      <strong>참고 시세 (Pre-Market)</strong><br>
+      2026. 10. 09. 18:13 (한국) / 05:13 (미국) 기준:<br>
+      <strong>631.68 USD</strong> (+11.00, +1.77%)
+    </div>
+
+    <div class="footer">
+      데이터 수집: Playwright MCP 자동 수집<br>
+      출처: <a href="https://m.stock.naver.com/worldstock/stock/AMD.O/price" target="_blank" rel="noopener noreferrer">네이버페이 증권 AMD 시세</a>
+    </div>
+  </div>
+</body>
+</html>
