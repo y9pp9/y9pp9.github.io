@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>삼성전자(005930) 어제 종가 보고서</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --blue: #2563eb;
+      --down-color: #2563eb;
+      --border: #e2e8f0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 100%;
+      max-width: 640px;
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+      padding: 32px;
+    }
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 6px;
+      background: #eff6ff;
+      color: var(--blue);
+      margin-bottom: 8px;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 0 8px 0;
+    }
+    .date-info {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .price-box {
+      background: #f1f5f9;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .price-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .price-value {
+      font-size: 38px;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.1;
+    }
+    .price-change {
+      margin-top: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--down-color);
+    }
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 24px;
+    }
+    .info-table th, .info-table td {
+      padding: 12px 14px;
+      text-align: left;
+      font-size: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .info-table th {
+      color: var(--text-muted);
+      font-weight: 600;
+      width: 35%;
+      background: #fafafa;
+    }
+    .info-table td {
+      color: var(--text-main);
+      font-weight: 500;
+    }
+    .notice {
+      background: #fffbeb;
+      border-left: 4px solid #f59e0b;
+      padding: 12px 16px;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #92400e;
+      line-height: 1.5;
+    }
+    .footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="badge">코스피 005930</span>
+      <h1 class="title">삼성전자 주가 정보</h1>
+      <div class="date-info">기준일: 2026년 10월 8일 (목요일 종가 기준)</div>
+    </div>
+
+    <div class="price-box">
+      <div class="price-label">어제 종가</div>
+      <div class="price-value">263,000원</div>
+      <div class="price-change">▼ 5,500원 (-2.05%)</div>
+    </div>
+
+    <table class="info-table">
+      <tbody>
+        <tr>
+          <th>기준일</th>
+          <td>2026. 10. 08. (목)</td>
+        </tr>
+        <tr>
+          <th>시가</th>
+          <td>269,500원</td>
+        </tr>
+        <tr>
+          <th>고가</th>
+          <td>270,000원</td>
+        </tr>
+        <tr>
+          <th>저가</th>
+          <td>262,000원</td>
+        </tr>
+        <tr>
+          <th>전일대비</th>
+          <td>-5,500원 (-2.05%)</td>
+        </tr>
+        <tr>
+          <th>거래량</th>
+          <td>20,157,893주</td>
+        </tr>
+        <tr>
+          <th>거래대금</th>
+          <td>5,350,036백만 원</td>
+        </tr>
+        <tr>
+          <th>조회 출처</th>
+          <td>네이버 증권 (Playwright MCP 브라우저 연동 확인)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="notice">
+      <strong>참고:</strong> 오늘(2026년 10월 9일)은 한글날 공휴일로 국내 증시(KRX) 휴장일이며, 어제(2026년 10월 8일) 거래 마감 종가 기준입니다.
+    </div>
+
+    <div class="footer">
+      Generated automatically &bull; GitHub Pages
+    </div>
+  </div>
+</body>
+</html>
